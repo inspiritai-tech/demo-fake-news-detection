@@ -36,14 +36,12 @@ st.image("hero-image.jpg")
 st.caption("Photo Credit: [Ludovica Dri](https://unsplash.com/@wanderluly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Bc_y35IwUHw). ")
 
 # Introduction
+st.header("Anatomy of a News Website")
 st.markdown(
 '''
-Heart disease is the [leading cause of death in the United States](https://www.cdc.gov/heartdisease/facts.htm).
-This class of disorders encompass a wide range of cardiovascular problems including but not limited to arrhythmia, atherosclerosis, cardiomyopathy, congenital heart defects, coronary artery disease, and heart infections.
-
-In 2020, heart disease caused [1 in every 5 deaths (697,000 people)](https://doi.org/10.1161/cir.0000000000001052) and cost [$229 billion dollars from 2017-2018](https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp).
-Although with lifestyle adjustments and certain medications can help manage heart disease, early detection and prevention remains one of the most potent
-ways to further reduce the risk of developing complications later in life. 
+Have you ever wondered how websites like google.com and nytimes.com work under the hood?
+Using the internet every day, it is easy to forget how magical even the most mundane web browsing experiences
+are. Consider, for example this article on The New York Times:
 '''
 )
 
