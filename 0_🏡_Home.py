@@ -13,7 +13,7 @@ st.set_page_config(page_title="Fake News Detection", page_icon="📰", layout='w
 st.sidebar.title("About")
 st.sidebar.info(
     """
-    [Web App URL](https://inspiritai-tech-demo-heart-disease-0--home-1jfryd.streamlitapp.com/)
+    [Web App URL](https://inspiritai-tech-demo-fake-news-detection-0--home-2r2yw7.streamlitapp.com/)
     \n
     [GitHub Respository](https://github.com/inspiritai-tech/demo-fake-news-detection)
     """
@@ -29,17 +29,74 @@ st.sidebar.info(
 
 # Title
 st.title("📰 Fake News Detection Powered by Neural Networks")
-st.subheader("Interactive News Classification Tool")
+st.subheader("Making Sense of the Age of Misinformation")
+st.markdown(
+    '''
+    We live in an age of rampant disinformation, both deliberate and accidental. The proliferation of
+    fake news has been accelerated in recent years through social media channels like Facebook, What's App,
+    Reddit, and others. Whether deliberate or accidental, misinformation drives powerful social and psychological
+    forces that shape how we behave in our society.
+    '''
+)
 
 # Hero Image
 st.image("hero-image.jpg")
 st.caption("Photo Credit: [Ludovica Dri](https://unsplash.com/@wanderluly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Bc_y35IwUHw). ")
 
-# Introduction
-st.header("Anatomy of a News Website")
+st.markdown(
+    '''
+    High quality, verfied information is the bedrock of a healthy public so that individuals can make
+    informed decisions about their own lives. Spotting fake news, however, can be a particularly tricky task.
+    Even a keen-eyed individual is not immune to the subtleties of unverified information. As a light example,
+    take the following news headline:
+    '''
+)
+
+st.warning("\"CAT LOVERS CAN TRY CAT FOOD INSPIRED DISHES AT FANCY FEAST'S ITALIAN POP-UP\"")
+
+st.markdown(
+    '''
+    There's nothing that you can exactly *point to* that's wrong with this headline, other than it feels absurd.
+    You may even be surprised to find that it's a [real headline](https://www.cnn.com/2022/07/31/business/fancy-feast-cat-food-restaurant-trnd/index.html).
+    Often time, the news is happening around is so fast and is spread widely online in so many different
+    formats that our attention might be so exhausted that we take what we see as fact.
+    '''
+)
+
+st.header("How AI Can Help Detect Fake News")
+
+st.markdown(
+    '''
+    If we train a machine learning model on as many examples of fake and real news articles as possible, then
+    we can deploy this tool to filter out fake content on information platforms before they proliferate enough to
+    substantially influence public opinion.
+
+    To learn more about how this works under the hood, keep reading this article. First, however, feel free to play
+    around with our fake news detection tool by plugging in any website to get a prediction for what our AI thinks of
+    that article.
+    '''
+)
+
+st.markdown('---')
+
+st.header(" 🗞️ AI Fake News Detector 📰 ")
+
+news_site = st.text_input(
+    '''
+    Paste in any link in the space below to recieve an AI powered prediction for whether your site is fake news or bona fide!
+    '''
+)
+
+st.markdown('---')
+
+st.image("newspapers.jpg")
+st.caption("Photo Credit: [Fabian Barral](https://unsplash.com/@iammrcup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Mwuod2cm8g4). ")
+
+st.header("How Does this Work?")
+st.subheader("Anatomy of a News Website")
 st.markdown(
 '''
-Have you ever wondered how websites like google.com and nytimes.com work under the hood?
+Have you ever wondered how websites like [google.com](https://www.google.com) and [nytimes.com](https://www.nytimes.com) work under the hood?
 Using the internet every day, it is easy to forget how magical even the most mundane web browsing experiences
 are. Consider, for example this article on The New York Times:
 '''
