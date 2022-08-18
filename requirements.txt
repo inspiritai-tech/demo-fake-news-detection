@@ -10,6 +10,5 @@ streamlit_ace
 seaborn
 scipy
 plotly
-pickle
 requests
 torchtext
